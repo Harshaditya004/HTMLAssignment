@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+            font-size: 36px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 90%;
+            position: relative;
+        }
+        .profile-image {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .profile-image img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #4CAF50;
+        }
+        .text-content {
+            margin-left: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 100%;
+        }
+        .text-content p {
+            color: #555;
+            font-size: 35px;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .text-content span {
+            color: #FF5733;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Profile</h1>
+    </header>
+    <div class="container">
+        <div class="profile-image">
+            <img src="myprofile.jpg" alt="Profile Picture">
+        </div>
+        <div class="text-content">
+            <p>
+                <span>About Myself:</span>
+            </p>
+            <p>
+                I am <span>G Harshaditya Reddy</span>, a passionate and driven individual currently pursuing a degree in <span>computer engineering</span> at <span>VIT Vellore</span>. As a first-year student in this prestigious institution, I am constantly amazed by the vast world of <span>technology</span> and the endless possibilities it offers. My journey into computer engineering stems from my fascination with solving <span>real-world problems</span> through innovative solutions, and I am excited to deepen my knowledge in programming, data structures, and cutting-edge technologies like <span>artificial intelligence</span> and <span>machine learning</span>.
+            </p>
+            <p>
+                At <span>VIT Vellore</span>, I am actively immersing myself in a dynamic learning environment that encourages <span>creativity</span>, critical thinking, and collaboration. Beyond academics, I take part in various clubs and technical communities to enhance my skills and network with like-minded peers. I firmly believe that <span>hands-on experience</span> is key to mastering any field, which is why I dedicate time to working on personal projects that challenge my coding and problem-solving abilities. These projects not only help me grow technically but also provide a sense of accomplishment and purpose.
+            </p>
+            <p>
+                Looking ahead, I aspire to contribute meaningfully to the <span>tech industry</span> by developing solutions that address pressing societal issues. My vision is to combine my technical expertise with my <span>creativity</span> to innovate and make a positive impact. I am also eager to explore opportunities for <span>research</span> and <span>internships</span> that will allow me to expand my horizons and gain practical insights. Every step I take in my computer engineering journey reinforces my commitment to learning, growing, and ultimately shaping a <span>better future</span>.
+            </p>
+        </div>
+    </div>
+    <footer>
+        G Harshaditya Reddy| 23BCE@0762
+    </footer>
+</body>
+</html>

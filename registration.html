@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Page</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 20px;
+background-color: #ffffff;
+}
+table {
+width: 70%;
+margin: auto;
+border-collapse: collapse;
+background: #fff;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+input[type="text"], input[type="email"], input[type="number"], input[type="date"], select,
+textarea {
+width: 100%;
+padding: 8px;
+margin: 5px 0;
+box-sizing: border-box;
+}
+input[type="radio"] {
+margin-right: 5px;
+}
+label {
+font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1 style="text-align:center;">Registration Form</h1>
+<table border="1">
+<tr>
+<td><label for="firstname">First Name:</label></td>
+<td><input type="text" id="firstname" name="firstname" maxlength="30" pattern="[a-zA-Z]+"
+required></td>
+</tr>
+<tr>
+<td><label for="lastname">Last Name:</label></td>
+<td><input type="text" id="lastname" name="lastname" maxlength="30" pattern="[a-zA-Z]+"
+required></td>
+</tr>
+<tr>
+<td><label for="dob">Date of Birth:</label></td>
+<td><input type="date" id="dob" name="dob" required></td>
+</tr>
+<tr>
+<td><label for="email">Email ID:</label></td>
+<td><input type="email" id="email" name="email" required></td>
+</tr>
+<tr>
+<td><label for="mobile">Mobile No.:</label></td>
+<td><input type="number" id="mobile" name="mobile" pattern="[0-9]{10}" required></td>
+</tr>
+<tr>
+<td><label>Gender:</label></td>
+<td>
+<input type="radio" id="male" name="gender" value="Male" required>
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="Female">
+<label for="female">Female</label>
+</td>
+</tr>
+<tr>
+<td><label for="address">Address:</label></td>
+<td><textarea id="address" name="address" rows="4" required></textarea></td>
+</tr>
+<tr>
+    <td><label for="city">City:</label></td>
+    <td><input type="text" id="city" name="city" required></td>
+    </tr>
+    <tr>
+    <td><label for="pincode">Pincode:</label></td>
+    <td><input type="number" id="pincode" name="pincode" required></td>
+    </tr>
+    <tr>
+    <td><label for="state">State:</label></td>
+    <td><input type="text" id="state" name="state" required></td>
+    </tr>
+    <tr>
+    <td><label for="country">Country:</label></td>
+    <td><input type="text" id="country" name="country" required></td>
+    </tr>
+    <tr>
+    <td><label>Hobbies:</label></td>
+    <td>
+    <input type="radio" id="Drawing" name="Hobbies" value="Drawing" required>
+    <label for="Drawing">Drawing</label>
+    <input type="radio" id="Singing" name="Hobbies" value="Singing">
+    <label for="Singing">Singing</label>
+    <input type="radio" id="Dancing" name="Hobbies" value="Dancing" required>
+    <label for="Dancing">Dancing</label>
+    <input type="radio" id="Sketching" name="Hobbies" value="Sketching">
+    <label for="Sketching">Sketching</label>
+    <input type="radio" id="Other" name="Hobbies" value="Other">
+    <label for="Other">Other</label>
+    </td>
+</tr>
+<tr>
+<th>Qualification:</th>
+<th>S.I No. Examination</th>
+</tr>
+<tr>
+<td>Class X</td>
+<td>
+<label for="classx_percentage">Percentage:</label>
+<input type="number" id="classx_percentage" name="classx_percentage" required><br>
+<label for="classx_year">Year of Passing:</label>
+<input type="number" id="classx_year" name="classx_year" required>
+</td>
+</tr>
+<tr>
+<td>Class XII</td>
+<td>
+<label for="classxii_percentage">Percentage:</label>
+<input type="number" id="classxii_percentage" name="classxii_percentage" required><br>
+<label for="classxii_year">Year of Passing:</label>
+<input type="number" id="classxii_year" name="classxii_year" required>
+</td>
+</tr>
+<td><label>Applied Courses:</label></td>
+<td>
+<input type="radio" id="btech" name="course" value="B-Tech" required>
+<label for="btech">B-Tech</label>
+<input type="radio" id="mtech" name="course" value="M-Tech">
+<label for="mtech">M-Tech</label>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
